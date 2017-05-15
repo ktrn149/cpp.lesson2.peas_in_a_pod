@@ -1,0 +1,30 @@
+// Algorithm
+//1. Ask user for number of pods, and store value in an int
+//2. Ask user for number of peas in one pod, and store value in an int
+//3. Multiply the two values together and store value in an int
+//4. Return total value to user
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() // function
+{
+    int number_of_pods, peas_per_pod, total_peas; // ints for storing values
+    cout << "Press return after entering a number. \n"; // explain how user should input values
+    cout << "Enter the number of pods: \n"; // ask user for number of pods
+    cin >> number_of_pods; // user inputs number of pods
+    cout << "Enter the number of peas in a pod: \n"; // ask user for number of peas per pod (assuming that they all have the same amount
+    cin >> peas_per_pod; // user inputs number of peas in each pod
+    total_peas = number_of_pods * peas_per_pod; // multiply the two values together and store in a third value
+    cout << " If you have "; 
+    cout << number_of_pods;
+    cout << " pods and ";
+    cout << peas_per_pod;
+    cout << " peas in each pod, then \n";
+    cout << "you have ";
+    cout << total_peas;
+    cout << " peas in all the pods.\n";  // return information to user
+    return 0;
+    }
